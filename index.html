@@ -1,102 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="res/favicon.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-    
-    <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
-    <script type="text/javascript" src="jscroller-0.4.js"></script>
-
-    <title>REWXRLD PORTFOLIO</title>
+    <title>rewxrld portfolio</title>
+    <link rel="stylesheet" href="project-style.css">
 </head>
 <body>
-    <div class="headset">
-        <div class="title">
-            <a href="index.html"><span class="logo">REWXRLD</span></a>
-        </div>
-        <div class="menu">
-            <a href="projects.html">PROJECTS</a>
-            <a href="about.html">ABOUT</a>
-        </div>
-    </div>
+    <header>
+        <h1>rewxrld portfolio</h1>
+        <p>значимые для меня проекты здесь</p>
+    </header>
 
-    <div class="content">        
-        <!----- Endless Scroll ----->
-        <div class="box-scroll">
-            <div id="track1">
-                <div class="marquee">
-                    <span class="x1"> REWXRLD </span>
-                    <span class="x2"> REWXRLD </span>
-                    <span class="x3"> REWXRLD </span>
-                </div>
+    <main>
+        <section class="projects">
+            <div class="project-card">
+                <h2>kembyt</h2>
+                <p>школьный проект. тест на определение личности, помогающий в профориентации, с подбором подходящих специальностей в вузах ижевска.</p>
+                <a href="https://github.com/GrifUndersun/kembyt" target="_blank" class="repo-link">репозиторий</a>
+                <a href="" target="_blank" class="project-link">перейти</a>
             </div>
-            <div id="track2">
-                <div class="marquee">
-                    <span class="x3"> REWXRLD </span>
-                    <span class="x2"> REWXRLD </span>
-                    <span class="x1"> REWXRLD </span>
-                </div>
+            <div class="project-card">
+                <h2>geek core</h2>
+                <p>created with my homie KvpSky <3</p>
+                <p>курсовой проект. сайт онлайн магазина для фанатов гик-культуры.</p>
+                <a href="" target="_blank" class="repo-link">репозиторий</a>
+                <a href="" target="_blank" class="project-link">перейти</a>
             </div>
-            <div id="track3">
-                <div class="marquee">
-                    <span class="x2"> REWXRLD </span>
-                    <span class="x1"> REWXRLD </span>
-                    <span class="x3"> REWXRLD </span>
-                </div>
+            <div class="project-card coming-soon">
+                <h2>secret project</h2>
+                <p>Coming Soon</p>
+                <span class="repo-link disabled">репозиторий</span>
+                <span class="project-link disabled">перейти</span>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-
-
-    <script src="endless_scroll.js"></script>
-    
-    <script type="text/javascript">
-        $(window).load(function () {
-            $("#track1").endlessScroll({ 
-			    width: "100%", // Ширина строки
-			    height: "12em", // Высота строки
-			    steps: -1, // Шаг анимации в пикселях. Если число отрицательное - движение влево, положительное - вправо
-			    speed: 15, // Скорость анимации (0 - максимальная)
-			    mousestop: false // Останавливать ли полосу при наведении мыши (да - true, нет - false)
-		    });
-	    });
-
-        $(window).load(function () {
-            $("#track2").endlessScroll({ 
-			    width: "100%", // Ширина строки
-			    height: "12em", // Высота строки
-			    steps: 1, // Шаг анимации в пикселях. Если число отрицательное - движение влево, положительное - вправо
-			    speed: 0, // Скорость анимации (0 - максимальная)
-			    mousestop: false // Останавливать ли полосу при наведении мыши (да - true, нет - false)
-		    });
-	    });
-
-        $(window).load(function () {
-            $("#track3").endlessScroll({ 
-			    width: "100%", // Ширина строки
-			    height: "12em", // Высота строки
-			    steps: -1, // Шаг анимации в пикселях. Если число отрицательное - движение влево, положительное - вправо
-			    speed: 30, // Скорость анимации (0 - максимальная)
-			    mousestop: false // Останавливать ли полосу при наведении мыши (да - true, нет - false)
-		    });
-	    });
-	
-    </script>
+    <footer>
+        <p>&copy; 2024 rewxrld trainee. all rights reserved (or not).</p>
+    </footer>
 </body>
 </html>
